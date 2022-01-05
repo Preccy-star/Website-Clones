@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	height: 10vh;
+}
+
+/*Header styles*/
+.header{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 30px;
+	align-items: center;
+}
+
+.header a{ /*styling the links in header*/
+	margin-right: 20px;
+	color: rgba(0, 0, 0, 0.87);
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.header a:hover{
+	text-decoration: underline;
+}
+
+.header-right{
+	display: flex;
+	align-items: center;
+	min-width: 13vw;
+	justify-content: space-around;
+}
+
+.header-right .header-apps{/*styling the apps in header-right class*/
+	margin-right: 20px;
+}
+
+
+/*Body*/
+.main-body{
+	flex: 1;
+	display: flex;
+	margin-top: 12%;
+	flex-direction: column;
+}
+
+.main-body img{/*styling the image in the main-body class*/
+	object-fit: contain;
+	height: 150px;
+}
+
+.search-input{
+	display: flex;
+	align-items: center;
+	border: 1px solid lightgray;
+	height: 30px;
+	padding: 10px 20px;
+	border-radius: 999px;
+	width: 75vw;
+	margin: 0 auto; /*auto centers it*/
+	margin-top: 5px;
+	max-width: 560px; /*so that it doesn't resize when it loads on a big screen*/
+}
+
+.search-input input{
+	flex: 1;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+}
+
+.search-input .icons{
+	color: gray;
+}
+
+.search-buttons{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.search-buttons button{
+	margin: 5px;
+	padding: 10px 15px;
+	background-color: #ebebe0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
